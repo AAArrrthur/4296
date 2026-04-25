@@ -1,0 +1,81 @@
+📊 [System] Performance Test Started
+🚀 [Task] Running Inference Container...
+--------------------------------------------------
+🚀 [Environment] Hostname: 69a329e818ec | Instance Type: Unknown-Local
+--------------------------------------------------
+==================================================
+Lightweight Short-term Price Predictor
+==================================================
+
+Data loaded: 2736 records
+Date range: 2014-09-22 to 2025-12-23
+
+Training model (predicting next 3 days)...
+Train Accuracy: 0.7055
+Test Accuracy: 0.6048
+
+Test Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.61      0.81      0.70       306
+           1       0.58      0.34      0.43       238
+
+    accuracy                           0.60       544
+   macro avg       0.60      0.57      0.56       544
+weighted avg       0.60      0.60      0.58       544
+
+
+==================================================
+Top 10 Feature Importance:
+==================================================
+                 feature  importance
+18          volatility_5    0.075110
+2    volatility_range_5d    0.072284
+11        high_low_ratio    0.060116
+14            close_ma_3    0.052753
+1             volume_ma5    0.048596
+21         volatility_10    0.048323
+24          return_lag_3    0.043981
+15          volatility_3    0.040022
+3   volatility_range_20d    0.039319
+4        volume_ratio_5d    0.039060
+
+==================================================
+Latest Prediction:
+==================================================
+Prediction Direction: NOT UP
+Up Probability: 30.28%
+Model Confidence: 69.72%
+Prediction Period: 3 trading days
+
+==================================================
+Backtest Signals (Last 20 Trading Days):
+==================================================
+      date    close  target  prediction  correct
+2025-11-26 7248.449       1           0    False
+2025-11-27 7257.454       1           0    False
+2025-11-28 7334.209       0           0     True
+2025-12-01 7386.681       0           0     True
+2025-12-02 7313.178       0           0     True
+2025-12-03 7248.274       1           0    False
+2025-12-04 7248.657       1           0    False
+2025-12-05 7342.493       1           0    False
+2025-12-08 7423.046       0           0     True
+2025-12-09 7380.583       0           0     True
+2025-12-10 7408.245       0           0     True
+2025-12-11 7311.995       0           0     True
+2025-12-12 7370.941       0           0     True
+2025-12-15 7309.078       0           0     True
+2025-12-16 7181.620       1           0    False
+2025-12-17 7288.739       1           0    False
+2025-12-18 7272.402       1           0    False
+2025-12-19 7329.806       0           0     True
+2025-12-22 7408.349       0           0     True
+2025-12-23 7392.421       0           0     True
+
+Recent Prediction Accuracy: 60.00%
+
+⏱️ [Metric] Inference Duration: 0:03.00 (MM:SS)
+💾 [Metric] Peak Memory: 30544 KB
+
+--------------------------------------------------
